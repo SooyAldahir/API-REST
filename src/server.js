@@ -11,8 +11,8 @@ const productRoutes = require('./routes/productRoute');
 app.use(express.json());
 
 //Rutas
-app.use('/api/users', userRoutes);
-app.use('/api/products', productRoutes);
+app.use('/api/', userRoutes);
+app.use('/api/', productRoutes);
 
 
 const PORT = process.env.PORT || 3005
